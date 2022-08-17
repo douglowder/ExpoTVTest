@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "patch-package",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "tvos": "react-native run-ios --scheme=ExpoTVTest-tvOS --simulator=\"Apple TV\"",
@@ -11,8 +12,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "expo-cli": "^6.0.1",
+    "patch-package": "^6.4.7",
     "react": "17.0.2",
-    "react-native": "npm:react-native-tvos@0.68.2-3"
+    "react-native": "npm:react-native-tvos@0.68.2-5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

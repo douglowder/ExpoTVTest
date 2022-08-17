@@ -1,0 +1,40 @@
+{
+  "cli": {
+    "version": ">= 0.56.0"
+  },
+  "build": {
+    "development": {
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "ios": {
+        "buildConfiguration": "Debug"
+      }
+    },
+    "previewandroid": {
+      "android": {
+        "buildType": "apk"
+      },
+      "distribution": "internal"
+    },
+    "previewios": {
+      "ios": {
+        "simulator": true,
+        "scheme": "ExpoTVTest"
+      },
+      "distribution": "internal"
+    },
+    "previewtvos": {
+      "ios": {
+        "simulator": true,
+        "scheme": "ExpoTVTest-tvOS"
+      },
+      "distribution": "internal"
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}
